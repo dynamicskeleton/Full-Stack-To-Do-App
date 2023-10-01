@@ -1,0 +1,9 @@
+First full stack app made by me with any help
+You cannot delete tasks yet, however I might add this feature
+I didn't focus on design, I know it doesn't look good
+This project is mainly to practice mongodb and express js
+
+To launch app:
+
+1. npm install
+2. npm start

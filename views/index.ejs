@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>To do app</h1>
+      <form action="/todosend" method="post">
+        <input
+          type="text"
+          id="inpt"
+          name="todo"
+          placeholder="Enter todo"
+          autocomplete="off"
+        />
+        <input type="submit" id="btn" />
+      </form>
+      <ul>
+        <% todos.forEach(todo => { %>
+        <li class="todo"><%= todo.todo %></li>
+        <% }) %>
+      </ul>
+    </div>
+  </body>
+</html>
