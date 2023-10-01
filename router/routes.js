@@ -28,19 +28,4 @@ router.post("/todosend", async (req, res) => {
   }
 });
 
-// router.delete("/deletetodo/:id", async (req, res) => {
-//   try {
-//     const todoId = req.params.id;
-
-//     // Use Mongoose to find and delete the todo item by ID
-//     await Todo.findByIdAndRemove(todoId);
-
-//     console.log("Todo deleted successfully");
-//     res.redirect("/");
-//   } catch (err) {
-//     console.error("Error deleting todo:", err);
-//     res.status(500).send("Error deleting todo");
-//   }
-// });
-
 module.exports = router;
